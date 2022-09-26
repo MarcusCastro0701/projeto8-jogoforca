@@ -1,0 +1,139 @@
+.root{
+    width: 100%;
+    height: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+.cima{
+    background-color: rgb(204, 195, 195);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagem-forca{
+    width: 35%;
+    height: 15%;
+    margin-left: 15%;
+}
+
+.botao-escolher{
+    width: 125%;
+    height: 90px;
+    margin-left: 85%;
+    margin-top: 18%;
+    font-size: 150%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.engloba-letras{
+    display: flex;
+    margin-left: 80%;
+    margin-top: 80%;
+    position: relative;
+}
+
+
+.engloba-escolhidas{
+    width: 100px;
+}
+
+.escolhida{
+    font-size: 40px;
+    margin-top: 130%; 
+    margin-left: 60%;
+    margin-right: 60%;
+    text-decoration: underline;
+}
+
+.green{
+    color: green;
+    font-size: 60px;
+    margin-top: 130%; 
+    margin-left: 60%;
+    margin-right: 60%;
+    
+}
+
+.red{
+    color: red;
+    font-size: 60px;
+    margin-top: 10%; 
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.teclado{
+    
+    width: 843px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.baixo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+}
+
+.teclas{
+    width: 60px;
+    height: 60px;
+    font-size: 210%;
+    border-radius: 12px;
+    margin-bottom: 6px;
+    cursor: pointer;
+
+}
+
+.teclas:disabled{
+    background-color: rgb(192, 11, 11);
+    font-style: grey;
+}
+
+.clicada{
+    background-color: rgb(192, 11, 11);
+    font-style: grey;
+}
+
+.chute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 40%;
+}
+
+.chute p{
+    font-size: 35px;
+    
+    font-style: italic;
+}
+
+.chute input{
+    margin-right: 2%;
+}
+
+.chute button{
+    
+    background-color: green;
+    width: 30%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.chutar{
+    color: white;
+    font-size: 25px;
+    
+}

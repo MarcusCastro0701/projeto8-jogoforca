@@ -1,0 +1,25 @@
+
+
+
+
+{pSplited.map((letra) => (
+    <>
+        <p class="escolhida" >{letra}</p>
+        
+        <p class={(bool1 === true) ? "escolhida" : "escolhida hidden"} >_</p>
+    </>
+))}
+
+<>
+    <p class="escolhida">{letra}</p>
+
+    <p class={(bool1===true) ? "escolhida" : "escolhida hidden" }>_</p>
+</>
+
+
+<div class = "palavra">
+    <button onClick = {escolhe} class="botao-escolher">Escolher palavra</button>
+    <div class = "engloba-letras">
+    
+    </div>
+</div>
