@@ -231,7 +231,7 @@ export default function App() {
     }
 
     function chutando() {
-        if (chute === p) {
+        if ((chute === p) || (chute === pSemAcento)) {
             setBoolAcertou(true)
         } else {
             setBoolErrou(true)
