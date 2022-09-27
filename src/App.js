@@ -58,7 +58,8 @@ const pSemAcento = p.normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace("Ã
 const pSplited = pSemAcento.split("");
 const pSplitedComAcento = p.split("")
 let semRepetidos = pSplited.filter((este, i) => pSplited.indexOf(este) === i);
-console.log(semRepetidos)
+console.log(p)
+console.log(pSemAcento)
 
 
 function TeclasPadrao(props){
@@ -140,7 +141,7 @@ function Englobapalavra(props) {
 
     function Gerapalavra(props){
         return(
-            <>{pSplitedComAcento.map((fator) => <Apenaspalavra letradapalavra={fator} letrasescolhidas = {props.letrasescolhidas}/>)}</>
+            <>{pSplited.map((fator) => <Apenaspalavra letradapalavra={fator} letrasescolhidas = {props.letrasescolhidas}/>)}</>
         )
     }
 
@@ -163,7 +164,7 @@ function Englobapalavra(props) {
 
     function Palavraverde(){
         return(
-            <>{pSplited.map((fator) => <Acertou letradapalavra={fator}/>)}</>
+            <>{pSplitedComAcento.map((fator) => <Acertou letradapalavra={fator}/>)}</>
         )
     }
     
